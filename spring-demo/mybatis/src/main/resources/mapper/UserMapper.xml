@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wlj.mybatis.mapper.UserMapper">
+    <!--查询-->
+    <select id="selectUserByName" parameterType="string" resultType="com.wlj.mybatis.dto.User">
+        SELECT * FROM db_example.user WHERE name = #{name}
+    </select>
+
+    <select id="selectUserByNames" parameterType="list" resultType="com.wlj.mybatis.dto.User">
+        SELECT * FROM db_example.user WHERE name IN
+        <foreach item="item" index="index" collection="list" separator="," open="(" close=")">
+            #{item}
+        </foreach>
+    </select>
+    
+    <update id="updateUserById" >
+
+    </update>
+
+</mapper>
