@@ -18,6 +18,7 @@
 	<modules>
 		<module>mybatis</module>
 		<module>design-mode</module>
+		<module>redis</module>
 	</modules>
 
 	<properties>
