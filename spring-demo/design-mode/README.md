@@ -8,3 +8,5 @@
 * proxy：代理模式
 * single：单例模式
 * abstractfactory：抽象工厂模式
+* template：模板方法模式
+* decorator：装饰模式
