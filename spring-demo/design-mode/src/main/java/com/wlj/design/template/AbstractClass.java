@@ -30,9 +30,24 @@ public abstract class AbstractClass {
         // TODO implement here
         //烧开水的两个步骤
         //1.装水到热水壶
-        operation1();
+        //若水壶中已经有水了，就不需要再倒水了
+        if(hook1()){
+            operation1();
+        }
         //2.烧水
-        operation2();
+        if(hook2()){
+            operation2();
+        }
+    }
+
+    //钩子方法
+    protected boolean hook1(){
+        return true;
+    }
+
+    //钩子方法
+    protected boolean hook2(){
+        return true;
     }
 
 }

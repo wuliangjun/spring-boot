@@ -17,5 +17,10 @@ public class Client {
         AbstractClass abstractClass2 = new ConcreteClass2();
         abstractClass1.templateMethod();
         abstractClass2.templateMethod();
+
+        //使用钩子函数
+        ConcreteClass1 concreteClass1 = new ConcreteClass1();
+        concreteClass1.setHook1(false);
+        concreteClass1.templateMethod();
     }
 }
