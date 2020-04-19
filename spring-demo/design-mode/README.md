@@ -10,3 +10,4 @@
 * abstractfactory：抽象工厂模式
 * template：模板方法模式
 * decorator：装饰模式
+* builder：建造者模式
