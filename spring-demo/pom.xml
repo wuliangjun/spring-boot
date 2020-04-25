@@ -27,6 +27,8 @@
 		<mybatis.plus.version>3.0.1</mybatis.plus.version>
 		<springboot.version>2.2.4.RELEASE</springboot.version>
 		<lombok.version>1.16.10</lombok.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
 	<!--<dependencies>-->
