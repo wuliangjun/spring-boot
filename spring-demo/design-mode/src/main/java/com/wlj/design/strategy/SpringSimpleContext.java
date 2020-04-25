@@ -19,11 +19,6 @@ public class SpringSimpleContext {
     @Autowired
     private final Map<String, LoginStrategy> strategyMap = new ConcurrentHashMap<>();
 
-    public SpringSimpleContext(Map<String, LoginStrategy> strategyMap) {
-        this.strategyMap.clear();
-        strategyMap.forEach((k, v)-> this.strategyMap.put(k, v));
-    }
-
     public String login(String poolId){
         LoginStrategy loginStrategy = strategyMap.get(poolId);
         if(loginStrategy != null){
