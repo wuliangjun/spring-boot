@@ -14,3 +14,4 @@
 * prototype：原型模式
 * strategy：策略模式
 * mediator：中介者模式
+* command：命令模式
