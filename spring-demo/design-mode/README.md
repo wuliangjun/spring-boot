@@ -17,4 +17,5 @@
 * command：命令模式
 * flyweight：享元模式
 * chain：责任链模式
-* facade：门面模式
+* facade：门面模式（外观模式）
+* interpreter：解释器模式
