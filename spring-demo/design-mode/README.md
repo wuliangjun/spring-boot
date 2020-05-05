@@ -16,3 +16,4 @@
 * mediator：中介者模式
 * command：命令模式
 * flyweight：享元模式
+* chain：责任链模式
