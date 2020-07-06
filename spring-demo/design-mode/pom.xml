@@ -56,7 +56,23 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+
+
+
+		<dependency>
+			<groupId>com.xio.emp</groupId>
+			<artifactId>emp-esb-api</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>snapshots</id>
+			<url>http://192.168.1.4:8081/repository/maven-snapshots/</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>

@@ -20,6 +20,7 @@
 		<module>design-mode</module>
 		<module>redis</module>
 		<module>rabbitmq</module>
+		<module>example</module>
 	</modules>
 
 	<properties>
@@ -31,6 +32,7 @@
 		<mybatis.plus.ds.version>2.4.2</mybatis.plus.ds.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<springfox.version>2.7.0</springfox.version>
 	</properties>
 
 	<!--<dependencies>-->
@@ -90,6 +92,18 @@
 				<groupId>com.oracle</groupId>
 				<artifactId>ojdbc6</artifactId>
 				<version>11.2.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>${springfox.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>${springfox.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
